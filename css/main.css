@@ -247,24 +247,36 @@ button {
 }
 .promo__wrapper {
   display: flex;
-
   height: 100dvh;
+  position: relative;
 }
 .promo__inner {
   display: flex;
   gap: 32px;
   margin: 430px auto 287px 118px;
 }
+@media screen and (max-width: 1150px) {
+  .promo__inner {
+    margin: 300px auto auto;
+  }
+}
+@media screen and (max-width: 960px) {
+  .promo__inner {
+    text-align: center;
+  }
+}
 .promo-target {
   width: 150px;
   height: 150px;
   margin-top: 22px;
-}
-.promo-target {
   display: inline-block;
   animation: spin 8s linear infinite;
 }
-
+@media screen and (max-width: 960px) {
+  .promo-target {
+    display: none;
+  }
+}
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -286,6 +298,12 @@ button {
   color: #fff;
   text-transform: uppercase;
 }
+@media screen and (max-width: 1150px) {
+  .promo__text h1 {
+    font-size: 75px;
+    line-height: 70px;
+  }
+}
 .promo__text h1 .promo__span {
   color: #0075ff;
 }
@@ -301,6 +319,11 @@ button {
   line-height: 29.23px;
   color: #fff;
   margin-top: 10px;
+}
+@media screen and (max-width: 960px) {
+  .promo__text p {
+    max-width: 600px;
+  }
 }
 .promo__items {
   display: flex;
@@ -323,6 +346,11 @@ button {
   text-transform: uppercase;
   background: #0075ff;
   transition: all 0.3s ease-out;
+}
+@media screen and (max-width: 1150px) {
+  .promo__button {
+    width: 50%;
+  }
 }
 .promo__button:hover {
   background: #fff;
