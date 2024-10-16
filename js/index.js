@@ -183,11 +183,23 @@ if (statusGride) {
 const burger = document.querySelector(".header__burger");
 const page = document.querySelector(".page ");
 const menuMobile = document.querySelector(".menu-mobile");
+const menuMobileItem = document.querySelector(".menu-mobile-item");
+const menuMobileList = document.querySelector(".menu-mobile-list");
+const menuMobileAssortment = document.querySelector(".menu-mobile-assortment");
+const headerLogo = document.querySelector(".header__logo");
 
 if (burger) {
   burger.addEventListener("click", () => {
     burger.classList.toggle("active");
     menuMobile.classList.toggle("active");
     page.classList.toggle("active");
+  });
+}
+
+if (menuMobileItem) {
+  menuMobileItem.addEventListener("click", () => {
+    menuMobileList.classList.add("active");
+    menuMobileAssortment.classList.remove("active");
+    headerLogo.classList.add("active");
   });
 }

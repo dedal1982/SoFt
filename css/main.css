@@ -117,6 +117,32 @@ button {
     align-items: center;
     justify-content: space-between;
   }
+  .menu-mobile-list.active {
+    display: none;
+  }
+  .menu-mobile-assortment {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ffffff;
+  }
+  .menu-mobile-assortment li a {
+    font-family: "Proxima Nova Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38.98px;
+    color: #fff;
+    letter-spacing: 0.02rem;
+  }
+  .assortment-title {
+    font-weight: 700 !important;
+  }
+  .menu-mobile-assortment.active {
+    display: none;
+  }
 }
 /*---header---*/
 .header {
@@ -138,6 +164,17 @@ button {
 .header__logo {
   width: 200px;
   height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header__logo svg {
+  display: none;
+}
+.header__logo.active.header__logo img {
+  display: none;
+}
+.header__logo.active.header__logo svg {
+  display: block;
 }
 .header__logo img {
   width: 100%;
