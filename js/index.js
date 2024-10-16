@@ -203,3 +203,10 @@ if (menuMobileItem) {
     headerLogo.classList.add("active");
   });
 }
+
+if (headerLogo)
+  headerLogo.addEventListener("click", () => {
+    menuMobileList.classList.remove("active");
+    menuMobileAssortment.classList.add("active");
+    headerLogo.classList.remove("active");
+  });
