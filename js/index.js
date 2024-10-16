@@ -182,10 +182,12 @@ if (statusGride) {
 //мобильное меню
 const burger = document.querySelector(".header__burger");
 const page = document.querySelector(".page ");
+const menuMobile = document.querySelector(".menu-mobile");
 
 if (burger) {
   burger.addEventListener("click", () => {
     burger.classList.toggle("active");
+    menuMobile.classList.toggle("active");
     page.classList.toggle("active");
   });
 }
