@@ -634,7 +634,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 @media screen and (max-width: 767px) {
   .catalog__gallery {
-    grid-template-columns: 1fr;
+    display: none;
   }
 }
 .catalog__card {
@@ -654,7 +654,7 @@ input[type="search"]::-webkit-search-results-decoration {
     height: 250px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .catalog__card {
     height: 190px;
   }
@@ -729,6 +729,11 @@ input[type="search"]::-webkit-search-results-decoration {
   color: #fff;
   cursor: pointer;
   background: transparent;
+}
+@media screen and (max-width: 767px) {
+  .catalog__button {
+    display: none !important;
+  }
 }
 /*---important---*/
 .important {
