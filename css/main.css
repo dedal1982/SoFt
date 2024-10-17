@@ -250,6 +250,18 @@ button {
   height: 100dvh;
   position: relative;
 }
+@media screen and (max-width: 1150px) {
+  .promo__wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 960px) {
+  .promo__wrapper {
+    height: auto;
+  }
+}
 .promo__inner {
   display: flex;
   gap: 32px;
@@ -257,12 +269,17 @@ button {
 }
 @media screen and (max-width: 1150px) {
   .promo__inner {
-    margin: 300px auto auto;
+    margin: 300px auto;
   }
 }
 @media screen and (max-width: 960px) {
   .promo__inner {
     text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .promo__inner {
+    margin: 150px auto 100px;
   }
 }
 .promo-target {
@@ -302,6 +319,12 @@ button {
   .promo__text h1 {
     font-size: 75px;
     line-height: 70px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .promo__text h1 {
+    font-size: 46px;
+    line-height: 51px;
   }
 }
 .promo__text h1 .promo__span {
@@ -350,6 +373,17 @@ button {
 @media screen and (max-width: 1150px) {
   .promo__button {
     width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .promo__items {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .promo__button {
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
   }
 }
 .promo__button:hover {
@@ -802,7 +836,6 @@ input[type="search"]::-webkit-search-results-decoration {
     position: relative;
     width: 30px;
     height: 20px;
-    right: 10px;
   }
 }
 @media screen and (max-width: 1024px) {
