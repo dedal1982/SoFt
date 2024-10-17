@@ -269,7 +269,7 @@ button {
 }
 @media screen and (max-width: 1150px) {
   .promo__inner {
-    margin: 300px auto;
+    margin: 300px auto 200px;
   }
 }
 @media screen and (max-width: 960px) {
@@ -457,6 +457,19 @@ button {
   color: #fff;
   text-transform: uppercase;
   text-align: center;
+}
+@media screen and (max-width: 1150px) {
+  .catalog__top {
+    flex-wrap: wrap;
+  }
+  .catalog__top-item {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .catalog__top-item {
+    width: 100%;
+  }
 }
 .catalog__inner {
   width: 100%;
