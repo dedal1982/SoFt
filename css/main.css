@@ -1043,3 +1043,14 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 @media screen and (max-width: 600px) {
 }
+/*---swiper---*/
+.catalog__swiper {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .catalog__swiper {
+    display: flex;
+    width: 600px;
+    height: 300px;
+  }
+}
