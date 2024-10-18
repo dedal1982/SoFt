@@ -818,6 +818,11 @@ input[type="search"]::-webkit-search-results-decoration {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 600px) {
+  .footer__wrapper {
+    padding-top: 60px;
+  }
+}
 .footer__logo {
   width: 180px;
   height: 70px;
@@ -831,6 +836,12 @@ input[type="search"]::-webkit-search-results-decoration {
   display: flex;
   gap: 95px;
   margin-top: 33px;
+}
+@media screen and (max-width: 960px) {
+  .footer__inner {
+    flex-direction: column;
+    gap: 50px;
+  }
 }
 .footer__list {
   display: flex;
@@ -908,6 +919,11 @@ input[type="search"]::-webkit-search-results-decoration {
   align-items: center;
   gap: 20px;
 }
+@media screen and (max-width: 600px) {
+  .footer__banks {
+    gap: 5px;
+  }
+}
 .footer__banks a img {
   width: 100% !important;
   height: 100% !important;
@@ -943,6 +959,12 @@ input[type="search"]::-webkit-search-results-decoration {
   position: relative;
   margin: 60px auto 0;
 }
+@media screen and (max-width: 767px) {
+  .footer__bottom {
+    margin: 30px auto;
+    height: 105px;
+  }
+}
 .footer__bottom-inner {
   background: #000;
   width: calc(100% - 2px);
@@ -959,11 +981,18 @@ input[type="search"]::-webkit-search-results-decoration {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .footer__bottom-inner {
+    justify-content: center;
+    gap: 10px;
+  }
+}
 .footer__bottom-inner span {
   font-family: "Proxima Nova Condensed", sans-serif;
   font-size: 16px;
   line-height: 14.54px;
   color: #fff;
+  text-align: center;
 }
 /*---адаптив---*/
 .header__burger {
