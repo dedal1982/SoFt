@@ -1047,11 +1047,12 @@ input[type="search"]::-webkit-search-results-decoration {
 /*---swiper---*/
 .catalog__swiper {
   display: none;
+  margin-top: 50px;
 }
 @media screen and (max-width: 767px) {
   .catalog__swiper {
     display: flex;
     width: 330px;
-    height: 250px;
+    height: 310px;
   }
 }
