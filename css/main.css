@@ -1050,7 +1050,7 @@ input[type="search"]::-webkit-search-results-decoration {
 @media screen and (max-width: 767px) {
   .catalog__swiper {
     display: flex;
-    width: 600px;
-    height: 300px;
+    width: 330px;
+    height: 250px;
   }
 }
