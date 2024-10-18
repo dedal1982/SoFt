@@ -444,6 +444,7 @@ button {
 }
 .catalog__top-item:hover {
   border: 1px solid #fff;
+  transform: scale(1.1);
 }
 .catalog__top-item img {
   width: 90px;
