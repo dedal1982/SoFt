@@ -39,6 +39,22 @@
   box-sizing: border-box;
   transition: all 0.3s ease-out;
 }
+@media screen and (max-width: 1200px) {
+  .utilities__back {
+    height: 60px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .utilities__back {
+    height: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .utilities__back {
+    width: 100%;
+    height: 50px;
+  }
+}
 .utilities__back:hover {
   background: #d06400;
 }
