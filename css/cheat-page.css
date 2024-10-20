@@ -117,3 +117,11 @@
   line-height: 24.36px;
   color: #fff;
 }
+/*---cheat bg---*/
+.cheat-page__valorant {
+  background: url(../images/bg-cheat-page.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+}
