@@ -62,7 +62,7 @@
 }
 .cheat-enemy__left-image {
   width: 100%;
-  height: 500px;
+  height: 100%;
   border-radius: 30px 30px 0 0;
 }
 .cheat-enemy__left-items {
@@ -88,14 +88,14 @@
 }
 
 .cheat-enemy__left-image-mini {
-  width: 80px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   border-radius: 15px;
   cursor: pointer;
 }
 .cheat-enemy__centr {
   width: 100%;
-  height: fit-content;
+  height: auto;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -138,7 +138,7 @@
   box-sizing: border-box;
   background: #fff;
   border-radius: 0 0 30px 30px;
-  height: 580px;
+  height: fit-content;
   overflow: auto;
   scrollbar-width: none;
 }
@@ -211,14 +211,7 @@
 .cheat-enemy__bottom {
   width: 100%;
   height: 108px;
-  background: linear-gradient(
-      181.4deg,
-      #ffffff -6.52%,
-      rgba(0, 117, 255, 0.5) 140.56%
-    ),
-    linear-gradient(0deg, #ffffff, #ffffff);
   border-radius: 0 0 30px 30px;
-  border-top: 1px solid #0075ff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -232,7 +225,6 @@
   flex-direction: column;
   padding: 20px 25px;
   box-sizing: border-box;
-  height: calc(100% - 100px);
 }
 .cheat-enemy__right-form label {
   font-family: "Proxima Nova Condensed", sans-serif;
@@ -262,6 +254,9 @@
   text-transform: uppercase;
   cursor: pointer;
   margin-bottom: 40px;
+}
+.form-page-check:last-child {
+  margin-bottom: 0;
 }
 .form-check-day {
   display: flex;
@@ -383,21 +378,6 @@
 }
 .cheat-enemy__agreement span.active {
   background: #000;
-}
-.cheat-enemy__chat {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-family: "Proxima Nova Condensed", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24.36px;
-  color: #000;
-  text-transform: uppercase;
-}
-.cheat-enemy__chat img {
-  width: auto;
-  height: auto;
 }
 .cheat-enemy__help {
   display: flex;
