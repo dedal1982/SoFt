@@ -714,9 +714,16 @@
     align-items: center;
     justify-content: center;
   }
+  .pay-mobile__agreement span.active {
+    background: #034b9f;
+  }
   .pay-mobile__agreement span img {
     width: 10px;
     height: 10px;
+    opacity: 0;
+  }
+  .pay-mobile__agreement span img.active {
+    opacity: 1;
   }
   .pay-mobile__chat {
     display: flex;
