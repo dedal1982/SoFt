@@ -11,29 +11,6 @@ if (cheatImageMini) {
   });
 }
 
-//tabs
-// const tabOpportunities = document.getElementById("opportunities");
-// const tabRequirements = document.getElementById("requirements");
-// const opportunitiesPage = document.getElementById("opportunitiesPage");
-// const requirementsPage = document.getElementById("functionalPage");
-
-// if (tabOpportunities) {
-//   tabOpportunities.addEventListener("click", () => {
-//     tabRequirements.classList.remove("active");
-//     tabOpportunities.classList.add("active");
-//     opportunitiesPage.classList.remove("active");
-//     requirementsPage.classList.add("active");
-//   });
-// }
-
-// if (tabRequirements) {
-//   tabRequirements.addEventListener("click", () => {
-//     tabOpportunities.classList.remove("active");
-//     tabRequirements.classList.add("active");
-//     requirementsPage.classList.remove("active");
-//     opportunitiesPage.classList.add("active");
-//   });
-// }
 //функция переключения табов
 const makeCodeUniversal = (
   tabItemsQuery,
@@ -90,37 +67,17 @@ if (pageItemBtn) {
 }
 
 //выбор дней
-const formPageChecks = document.querySelectorAll(".form-page-check");
-const formChecks = document.querySelectorAll(".form-check");
-const formAgreement = document.querySelector(".cheat-enemy__agreement span");
-const buyArrow = document.querySelectorAll(".buy");
+const formCheckDays = document.querySelectorAll(".form-page-check");
+const formCheckDaysCheck = document.querySelectorAll(".form-check");
 
-if (formPageChecks) {
-  formPageChecks.forEach((item) => {
+if (formCheckDays) {
+  formCheckDays.forEach((item) => {
     item.addEventListener("click", () => {
-      formChecks.forEach((elem) => {
-        if (elem.classList.contains("active")) {
-          elem.classList.remove("active");
-          formAgreement.classList.remove("active");
-          buyArrow.forEach((el) => {
-            el.classList.remove("active");
-          });
-        }
-        const formCheck = item.querySelector(".form-check");
-        formCheck.classList.add("active");
+      formCheckDaysCheck.forEach((elem) => {
+        elem.classList.remove("active");
       });
-    });
-  });
-}
-if (formAgreement) {
-  formAgreement.addEventListener("click", () => {
-    formAgreement.classList.toggle("active");
-    formPageChecks.forEach((item) => {
-      const itemSpan = item.querySelector(".form-check");
-      if (itemSpan.classList.contains("active")) {
-        const itemArrow = item.querySelector(".buy");
-        itemArrow.classList.toggle("active");
-      }
+      const itemCheck = item.querySelector(".form-check");
+      itemCheck.classList.add("active");
     });
   });
 }
