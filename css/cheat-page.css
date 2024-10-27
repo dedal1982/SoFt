@@ -125,3 +125,80 @@
   background-repeat: no-repeat;
   margin-top: 100px;
 }
+.cheat-page__tarkov {
+  background: url(../tarkov/тарков.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+}
+.cheat-page__warface {
+  background: url(../warface/варфейс.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+}
+.cheat-page__rust {
+  background: url(../rust/раст.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+}
+.cheat-page__battle-teams {
+  background: url(../battle-teams/батлтимс.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+}
+.cheat-page__dota {
+  background: url(../dota/дота2.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+}
+.cheat-page__dayz {
+  background: url(../dayz/dayz.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+}
+.cheat-page__apex {
+  background: url(../apex/апекс.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+}
+.cheat-page__arena {
+  background: url(../arena/арена.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+}
+.cheat-page__pubg {
+  background: url(../pubg/пабг.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+}
+.cheat-page__fortnight {
+  background: url(../fortnight/фортнайт.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+}
+.cheat-page__warzone {
+  background: url(../warzone/варзон.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+}

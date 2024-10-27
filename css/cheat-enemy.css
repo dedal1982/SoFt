@@ -9,17 +9,36 @@
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 1024px) {
+  .cheat-enemy__wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cheat-enemy__wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 .cheat-enemy__bg {
   background: url(../images/bg-cheat-page.png);
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
+  margin-top: 100px;
 }
 .cheat-enemy__top {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media screen and (max-width: 960px) {
+  .cheat-enemy__top {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 .cheat-enemy__back {
   width: 315px;
@@ -53,8 +72,22 @@
   gap: 20px;
   margin-top: 38px;
 }
+@media screen and (max-width: 1023px) {
+  .cheat-enemy__inner {
+    display: none;
+  }
+}
+.mob-swiper {
+  display: none !important;
+}
+/* @media screen and (max-width: 1200px) {
+  .cheat-enemy__inner {
+    display: none;
+  }
+} */
+
 .cheat-enemy__left {
-  width: 427px;
+  width: 33.33%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -95,7 +128,7 @@
   cursor: pointer;
 }
 .cheat-enemy__centr {
-  width: 426px;
+  width: 33.33%;
   height: 100%;
   overflow: hidden;
   display: flex;
@@ -126,6 +159,12 @@
   color: #00000099;
   text-transform: uppercase;
 }
+@media screen and (max-width: 1200px) {
+  .cheat-enemy__centr-tab {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
 .cheat-enemy__centr-tab.active {
   cursor: default;
   color: #000;
@@ -134,7 +173,7 @@
   width: 100%;
   display: none;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
   padding: 25px 25px 35px 25px;
   box-sizing: border-box;
   background: #fff;
@@ -154,7 +193,7 @@
 }
 .page-item-top {
   width: 100%;
-  height: 70px;
+  height: 65px;
   border-radius: 10px;
   background: #0075ff;
   padding-left: 30px;
@@ -179,6 +218,18 @@
   width: 30px;
   height: 30px;
 }
+@media screen and (max-width: 1340px) {
+  .page-item span {
+    font-size: 20px;
+    line-height: 21px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .page-item span {
+    font-size: 18px;
+    line-height: 19px;
+  }
+}
 .arrow-img {
   width: 30px;
   height: 30px;
@@ -188,7 +239,7 @@
   transform: rotate(90deg);
 }
 .cheat-enemy__right {
-  width: 426px;
+  width: 33.33%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -200,15 +251,30 @@
   height: 108px !important;
   border-bottom: 2px solid #0075ff;
   font-family: "Proxima Nova Condensed", sans-serif;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29.23px;
-  color: #000;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48.72px;
+  background: linear-gradient(
+    90deg,
+    #034b9f 0%,
+    #2284f9 36.5%,
+    #2284f9 63%,
+    #034b9f 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 30px 30px 0 0;
+}
+@media screen and (max-width: 1200px) {
+  .cheat-enemy__right-top {
+    font-size: 30px;
+    line-height: 38.72px;
+  }
 }
 .cheat-enemy__bottom {
   width: 100%;
@@ -216,10 +282,14 @@
   border-radius: 0 0 30px 30px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 5px;
-  padding: 10px;
+  padding: 10px 10px 10px 32px;
   box-sizing: border-box;
+}
+@media screen and (max-width: 1200px) {
+  .cheat-enemy__bottom {
+    padding: 20px;
+  }
 }
 .cheat-enemy__right-form {
   width: 100%;
@@ -227,35 +297,32 @@
   flex-direction: column;
   padding: 20px 25px;
   box-sizing: border-box;
+  border-bottom: 1px solid #000000;
 }
 .cheat-enemy__right-form label {
   font-family: "Proxima Nova Condensed", sans-serif;
   font-weight: 600;
   font-size: 24px;
   line-height: 29.23px;
-  color: #000;
+  color: #034b9f;
   margin-bottom: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.form-page-check__wrapp {
+  width: 100%;
+  height: 266px;
+  border-radius: 14px;
+  background: #0075ff;
+  padding: 23px;
+  box-sizing: border-box;
 }
 .form-page-check {
   width: 100%;
-  height: 115px;
-  border-radius: 10px;
-  background: linear-gradient(0deg, #0075ff, #0075ff),
-    linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 117, 255, 0) 50%);
-  padding-left: 30px;
-  padding-right: 30px;
-  box-sizing: border-box;
+  height: 58px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  font-family: "Proxima Nova Condensed", sans-serif;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29.23px;
-  color: #fff;
-  text-transform: uppercase;
-  cursor: pointer;
-  margin-bottom: 40px;
+  margin-bottom: 23px;
 }
 .form-page-check:last-child {
   margin-bottom: 0;
@@ -264,13 +331,51 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom: 1px solid #d9d9d9;
 }
 .form-check-day p {
   font-family: "Proxima Nova Condensed", sans-serif;
   font-weight: 700;
-  font-size: 52px;
-  line-height: 63.34px;
+  font-size: 40px;
+  line-height: 58.46px;
   color: #fff;
+}
+@media screen and (max-width: 1340px) {
+  .form-check-day p {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .form-check-day p {
+    font-size: 27px;
+    left: 30px;
+  }
+}
+.form-page-amount {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Proxima Nova Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48.72px;
+  color: #0075ff;
+  margin-top: 25px;
+}
+.form-page-amount span {
+  font-size: 36px;
+  line-height: 43.85px;
+}
+@media screen and (max-width: 1200px) {
+  .form-page-amount {
+    font-size: 32px;
+    line-height: 38.72px;
+  }
+  .form-page-amount span {
+    font-size: 26px;
+    line-height: 30.85px;
+  }
 }
 .no-link.active {
   cursor: pointer;
@@ -283,24 +388,22 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 29.23px;
-  color: #0075ff;
+  color: #fff;
   text-transform: capitalize;
-}
-.form-check-coin span {
-  color: #8b8b8b;
 }
 .form-check {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   background: #fff;
+  margin-right: 13px;
 }
 .form-check img {
-  width: 20px;
-  height: 20px;
+  width: 12px;
+  height: 12px;
   display: none;
 }
 .form-check.active.form-check img {
@@ -309,20 +412,7 @@
 .form-check {
   position: relative;
 }
-.form-check::after {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  content: url(../icons/unchk.png);
-  background-repeat: no-repeat;
-}
-.form-check.active.form-check::after {
-  content: "";
-}
+
 .form-button {
   width: 100%;
   height: 70px;
@@ -353,33 +443,74 @@
   height: 30px;
 }
 .buy {
-  visibility: hidden;
+  margin-left: auto;
+  margin-top: 5px;
 }
-.buy.active {
-  visibility: visible;
-}
-.cheat-enemy__agreement {
+.form-page__btn {
+  max-width: 308px;
+  width: 100%;
+  height: 51px;
+  border-radius: 14px;
+  background: #0075ff;
+  margin: 26px auto 0;
   display: flex;
   align-items: center;
-  gap: 10px;
-}
-.cheat-enemy__agreement span {
-  width: 25px;
-  height: 25px;
-  border-radius: 8px;
-  border: 1px solid #000000;
+  justify-content: center;
+  text-transform: uppercase;
   font-family: "Proxima Nova Condensed", sans-serif;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 19.49px;
-  color: #000;
+  font-size: 32px;
+  line-height: 38.98px;
+  color: #fff;
+}
+@media screen and (max-width: 1200px) {
+  .form-page__btn {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+.cheat-enemy__agreement {
+  display: flex;
+  gap: 10px;
+  font-family: "Proxima Nova Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24.36px;
+  color: #034b9f;
+}
+@media screen and (max-width: 1200px) {
+  .cheat-enemy__agreement {
+    gap: 5px;
+  }
+}
+.cheat-enemy__agreement span {
+  width: 21px;
+  height: 21px;
+  border-radius: 8px;
+  border: 1px solid #034b9f;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #fff;
 }
+@media screen and (max-width: 1200px) {
+  .cheat-enemy__agreement {
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .cheat-enemy__agreement span {
+    width: 17px;
+    height: 17px;
+    border-radius: 5px;
+  }
+}
 .cheat-enemy__agreement span.active {
-  background: #000;
+  background: #0075ff;
+}
+.cheat-enemy__agreement span img {
+  width: 10px;
+  height: 10px;
 }
 .cheat-enemy__help {
   display: flex;
@@ -387,9 +518,30 @@
   gap: 10px;
   font-family: "Proxima Nova Condensed", sans-serif;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 19.49px;
-  color: #000;
+  font-size: 20px;
+  line-height: 24.36px;
+  color: #034b9f;
+}
+.cheat-enemy__help span {
+  width: 21px;
+  height: 21px;
+  border-radius: 8px;
+  border: 1px solid #034b9f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+@media screen and (max-width: 1200px) {
+  .cheat-enemy__help {
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .cheat-enemy__help span {
+    width: 17px;
+    height: 17px;
+    border-radius: 5px;
+  }
 }
 .cheat-enemy__help img {
   width: auto;
@@ -426,4 +578,244 @@
 }
 .page-item-inner.active p {
   color: #000;
+}
+/*---
+/*---pay-mobile---*/
+.pay-mobile {
+  display: none;
+}
+@media screen and (max-width: 1023px) {
+  .pay-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto 0;
+    max-width: 341px;
+    width: 100%;
+  }
+  .pay-mobile__img-main {
+    width: 100%;
+    height: 192px;
+    border-radius: 14px;
+    background: linear-gradient(
+      180.14deg,
+      #ebebeb 15.8%,
+      #013776 129.51%,
+      #052346 142.64%
+    );
+  }
+  .pay-mobile__img-wrapp {
+    width: 341px;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 25px;
+  }
+  .pay-mobile__img-mini {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 14px;
+    background: linear-gradient(
+      180.14deg,
+      #ebebeb 15.8%,
+      #013776 129.51%,
+      #052346 142.64%
+    );
+  }
+  .pay-mobile__inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(
+      180.14deg,
+      #ebebeb 15.8%,
+      #013776 129.51%,
+      #052346 142.64%
+    );
+    border-radius: 14px;
+    margin-top: 30px;
+  }
+  .pay-mobile__inner-top {
+    width: 100%;
+    height: 54px;
+    border-radius: 14px 14px 0 0;
+    font-family: "Proxima Nova Condensed", sans-serif;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 45.07px;
+    background: linear-gradient(
+      90deg,
+      #034b9f 0%,
+      #2284f9 28%,
+      #2183f9 56.5%,
+      #2284f9 80.57%,
+      #034b9f 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 1px solid #0075ff;
+  }
+  .pay-mobile__form {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 11px 16px 11px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #0075ff;
+  }
+  .pay-mobile__inner-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+  }
+  .pay-mobile__btn {
+    width: 97px;
+    height: 50px;
+    border-radius: 14px;
+    background: #0075ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Proxima Nova Condensed", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20.71px;
+    color: #fff;
+  }
+  .pay-mobile__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    padding: 18px 11px 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #0075ff;
+  }
+  .pay-mobile__agreement {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: "Proxima Nova Condensed", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19.49px;
+    color: #034b9f;
+  }
+  .pay-mobile__agreement span {
+    width: 26.64px;
+    height: 26.64px;
+    border-radius: 8px;
+    border: 1px solid #034b9f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .pay-mobile__agreement span img {
+    width: 10px;
+    height: 10px;
+  }
+  .pay-mobile__chat {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: "Proxima Nova Condensed", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19.49px;
+    color: #034b9f;
+    text-transform: uppercase;
+    margin: 0 auto;
+  }
+  .pay-mobile__item-tabs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 14px 11px 60px 11px;
+    box-sizing: border-box;
+  }
+  .pay-mobile__tabs {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+  .pay-mobile__tab {
+    width: 156px;
+    height: 50px;
+    border-radius: 14px;
+    background: #0075ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Proxima Nova Condensed", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .pay-mobile__tabs-pages {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-top: 18px;
+  }
+  .pay-mobile__page {
+    width: 100%;
+    height: 59.74px;
+    border-radius: 13px;
+    background: linear-gradient(0deg, #0075ff, #0075ff),
+      linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 117, 255, 0) 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    font-family: "Proxima Nova Condensed", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29.23px;
+    text-transform: uppercase;
+    color: #fff;
+    padding-left: 27px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 11;
+  }
+  .pay-mobile__page-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .pay-mobile__page-inner {
+    font-family: "Proxima Nova Condensed", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #000;
+    background: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-radius: 0 0 10px 10px;
+    z-index: 10;
+    border: 1px solid #0075ff;
+    height: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    margin-top: -10px;
+  }
+  .pay-mobile__page-inner.active {
+    visibility: visible;
+    height: fit-content;
+    padding: 20px;
+  }
 }
