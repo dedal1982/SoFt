@@ -82,6 +82,21 @@ if (formCheckDays) {
   });
 }
 
+//делаем кнопку купить кликабельной,если согласен
+const formBtnActive = document.querySelector(".form-page__btn-wrapp");
+const formBtnPay = document.querySelector(".form-page__btn");
+const cheatAgreementCheck = document.querySelector(
+  ".cheat-enemy__agreement span"
+);
+
+if (cheatAgreementCheck) {
+  cheatAgreementCheck.addEventListener("click", () => {
+    cheatAgreementCheck.classList.toggle("active");
+    formBtnActive.classList.toggle("active");
+    formBtnPay.classList.toggle("active");
+  });
+}
+
 //смотреть все карточки игр
 const catalogButton = document.querySelector(".catalog__button");
 const catalogGalleryHidden = document.querySelector(".catalog__gallery-hidden");
