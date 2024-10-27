@@ -760,10 +760,13 @@
   }
   .pay-mobile__tabs-pages {
     width: 100%;
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 22px;
     margin-top: 18px;
+  }
+  .pay-mobile__tabs-pages.active {
+    display: flex;
   }
   .pay-mobile__page {
     width: 100%;

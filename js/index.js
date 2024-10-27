@@ -12,28 +12,59 @@ if (cheatImageMini) {
 }
 
 //tabs
-const tabOpportunities = document.getElementById("opportunities");
-const tabRequirements = document.getElementById("requirements");
-const opportunitiesPage = document.getElementById("opportunitiesPage");
-const requirementsPage = document.getElementById("functionalPage");
+// const tabOpportunities = document.getElementById("opportunities");
+// const tabRequirements = document.getElementById("requirements");
+// const opportunitiesPage = document.getElementById("opportunitiesPage");
+// const requirementsPage = document.getElementById("functionalPage");
 
-if (tabOpportunities) {
-  tabOpportunities.addEventListener("click", () => {
-    tabRequirements.classList.remove("active");
-    tabOpportunities.classList.add("active");
-    opportunitiesPage.classList.remove("active");
-    requirementsPage.classList.add("active");
-  });
-}
+// if (tabOpportunities) {
+//   tabOpportunities.addEventListener("click", () => {
+//     tabRequirements.classList.remove("active");
+//     tabOpportunities.classList.add("active");
+//     opportunitiesPage.classList.remove("active");
+//     requirementsPage.classList.add("active");
+//   });
+// }
 
-if (tabRequirements) {
-  tabRequirements.addEventListener("click", () => {
-    tabOpportunities.classList.remove("active");
-    tabRequirements.classList.add("active");
-    requirementsPage.classList.remove("active");
-    opportunitiesPage.classList.add("active");
-  });
-}
+// if (tabRequirements) {
+//   tabRequirements.addEventListener("click", () => {
+//     tabOpportunities.classList.remove("active");
+//     tabRequirements.classList.add("active");
+//     requirementsPage.classList.remove("active");
+//     opportunitiesPage.classList.add("active");
+//   });
+// }
+//функция переключения табов
+const makeCodeUniversal = (
+  tabItemsQuery,
+  formItemsQuery,
+  tabClassName = "active"
+) => {
+  const tabItems = Array.from(document.querySelectorAll(tabItemsQuery));
+  const formItems = Array.from(document.querySelectorAll(formItemsQuery));
+
+  const clearActiveTabs = (element) => {
+    element.find((item) => item.classList.remove(tabClassName));
+  };
+
+  const setActiveTab = (element, index) => {
+    element[index].classList.toggle(tabClassName);
+  };
+
+  const chekTab = (item, index) => {
+    item.addEventListener("click", () => {
+      clearActiveTabs(tabItems);
+      clearActiveTabs(formItems);
+
+      setActiveTab(tabItems, index);
+      setActiveTab(formItems, index);
+    });
+  };
+  tabItems.forEach(chekTab);
+};
+
+makeCodeUniversal(".cheat-enemy__centr-tab", ".cheat-enemy__centr-page");
+makeCodeUniversal(".pay-mobile__tab", ".pay-mobile__tabs-pages");
 
 //аккордеон
 const pageItemBtn = document.querySelectorAll(".page-item");
