@@ -758,6 +758,10 @@
     text-transform: uppercase;
     cursor: pointer;
   }
+  .pay-mobile__tab.active {
+    background: #fff;
+    color: #0075ff;
+  }
   .pay-mobile__tabs-pages {
     width: 100%;
     display: none;
