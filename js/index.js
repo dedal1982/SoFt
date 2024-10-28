@@ -66,9 +66,10 @@ if (pageItemBtn) {
   });
 }
 
-//выбор дней
+//выбор дней + цена
 const formCheckDays = document.querySelectorAll(".form-page-check");
 const formCheckDaysCheck = document.querySelectorAll(".form-check");
+const formAmount = document.querySelector(".form-page-amount span");
 
 if (formCheckDays) {
   formCheckDays.forEach((item) => {

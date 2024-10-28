@@ -249,7 +249,6 @@ button {
 }
 .promo__wrapper {
   display: flex;
-  height: 100dvh;
   position: relative;
 }
 @media screen and (max-width: 1150px) {
@@ -263,6 +262,54 @@ button {
   .promo__wrapper {
     height: auto;
   }
+}
+.promo__pic {
+  width: 910px;
+  height: 910px;
+  position: absolute;
+  top: 136px;
+  right: 0;
+}
+.promo__pic-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: url(../images/PROMO-PIC.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.promo__pic-1 {
+  position: absolute;
+  width: 451.51px;
+  height: 300.91px;
+  object-fit: contain;
+  bottom: 8px;
+  left: 167px;
+}
+.promo__pic-2 {
+  position: absolute;
+  width: 333.92px;
+  height: 229.81px;
+  object-fit: contain;
+  right: -7px;
+  bottom: 200px;
+}
+.promo__pic-3 {
+  position: absolute;
+  width: 132.9px;
+  height: 94.48px;
+  object-fit: contain;
+  right: 178px;
+  bottom: 121px;
+}
+.promo__pic-4 {
+  position: absolute;
+  width: 109.53px;
+  height: 77.87px;
+  object-fit: contain;
+  right: 11px;
+  bottom: 425px;
 }
 .promo__inner {
   display: flex;
