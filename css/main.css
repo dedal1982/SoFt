@@ -158,8 +158,7 @@ button {
 .header__wrapper {
   display: flex;
   align-items: center;
-  margin-right: 35px;
-  float: right;
+  justify-content: center;
 }
 .header__logo {
   width: 200px;
@@ -250,6 +249,10 @@ button {
 .promo__wrapper {
   display: flex;
   position: relative;
+  max-width: 1840px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
 }
 @media screen and (max-width: 1150px) {
   .promo__wrapper {
@@ -270,14 +273,40 @@ button {
   top: 136px;
   right: 0;
 }
+@media screen and (max-width: 1024px) {
+  .promo__pic {
+    top: calc(50% + 120px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
 .promo__pic-inner {
   width: 100%;
   height: 100%;
   position: relative;
-  background: url(../images/PROMO-PIC.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
+}
+.promo__pic-inner img {
+  position: relative;
+  z-index: 3;
+}
+.promo__circle {
+  width: 600px;
+  height: 600px;
+  background: linear-gradient(to bottom, #034b9f, #2284f9);
+  position: absolute;
+  top: 120px;
+  left: 150px;
+  border-radius: 50%;
+
+  animation: spin 5s linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .promo__pic-1 {
   position: absolute;
@@ -315,6 +344,7 @@ button {
   display: flex;
   gap: 32px;
   margin: 430px auto 287px 118px;
+  z-index: 3;
 }
 @media screen and (max-width: 1150px) {
   .promo__inner {
