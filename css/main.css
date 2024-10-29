@@ -267,8 +267,8 @@ button {
   }
 }
 .promo__pic {
-  width: 910px;
-  height: 910px;
+  width: 811px;
+  height: 814px;
   position: absolute;
   top: 136px;
   right: 0;
@@ -295,7 +295,7 @@ button {
   background: linear-gradient(to bottom, #034b9f, #2284f9);
   position: absolute;
   top: 120px;
-  left: 150px;
+  left: 58px;
   border-radius: 50%;
 
   animation: spin 5s linear infinite;
