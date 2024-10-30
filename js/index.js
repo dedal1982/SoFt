@@ -214,3 +214,28 @@ if (headerLogo)
     menuMobileAssortment.classList.add("active");
     headerLogo.classList.remove("active");
   });
+
+//наведение на кнопку товары по 400
+const catalogCards = document.querySelectorAll(".catalog__card");
+
+if (catalogCards) {
+  catalogCards.forEach((item) => {
+    item.addEventListener("mouseover", () => {
+      const cardButtons = item.querySelectorAll(".catalog__card-button");
+      cardButtons.forEach((elem) => {
+        elem.textContent = "Приобрести читы";
+      });
+    });
+  });
+}
+
+if (catalogCards) {
+  catalogCards.forEach((item) => {
+    item.addEventListener("mouseout", () => {
+      const cardButtons = item.querySelectorAll(".catalog__card-button");
+      cardButtons.forEach((elem) => {
+        elem.textContent = "Товары от 400 руб";
+      });
+    });
+  });
+}

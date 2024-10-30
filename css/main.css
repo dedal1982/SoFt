@@ -782,7 +782,6 @@ input[type="search"]::-webkit-search-results-decoration {
   font-size: 20px;
   line-height: 25px;
   color: #fff;
-  text-transform: uppercase;
   background: #0075ff;
   border-radius: 5px;
   cursor: pointer;
