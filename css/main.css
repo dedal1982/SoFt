@@ -245,7 +245,10 @@ button {
   width: 100%;
   height: 100dvh;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    linear-gradient(180deg, rgba(13, 16, 19, 0) 0%, #0075ff 244.5%);
+    linear-gradient(180deg, rgba(13, 16, 19, 0) 0%, #0075ff 244.5%),
+    url(../images/Frame\ 14.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .promo__wrapper {
   display: flex;
