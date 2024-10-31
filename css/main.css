@@ -285,10 +285,21 @@ button {
     transform: translate(-50%, -50%);
   }
 }
+.promo__mobile {
+  display: none;
+}
 @media screen and (max-width: 767px) {
   .promo__pic {
-    max-width: 500px;
+    display: none;
+  }
+  .promo__mobile {
+    display: block;
+    width: 350px;
     height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 .promo__pic-inner {
@@ -300,8 +311,9 @@ button {
   position: relative;
   z-index: 3;
 }
-@media screen and (max-width: 767px) Х .promo__mobile {
+@media screen and (max-width: 767px) {
 }
+
 .promo__circle {
   width: 600px;
   height: 600px;
