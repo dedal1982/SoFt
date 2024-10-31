@@ -838,7 +838,8 @@ input[type="search"]::-webkit-search-results-decoration {
 /*---important---*/
 .important {
   width: 100%;
-  background: rgba(16, 20, 23, 1);
+  height: 1000px;
+  background: url(../images/important.png);
 }
 .important__bg {
 }
