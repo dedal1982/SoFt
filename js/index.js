@@ -239,3 +239,16 @@ if (catalogCards) {
     });
   });
 }
+
+//выбор дней и появление цены в оплате
+const checkDays = document.querySelectorAll(".form-page-check");
+const amountBody = document.querySelector(".form-page-amount span");
+
+if (checkDays) {
+  checkDays.forEach((item) => {
+    item.addEventListener("click", () => {
+      const dataPrise = item.getAttribute("data-prise");
+      amountBody.textContent = dataPrise + " " + "₽";
+    });
+  });
+}
