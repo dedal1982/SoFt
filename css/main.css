@@ -565,7 +565,7 @@ button {
   align-items: center;
   padding-top: 45px;
   box-sizing: border-box;
-  border: 1px solid #131313;
+  border: 1px solid transparent;
   transition: all 0.3s ease-out;
 }
 .catalog__top-item:hover {

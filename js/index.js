@@ -275,3 +275,13 @@ if (checkDays) {
     });
   });
 }
+
+//статус читов выпадающий список
+const cheatStatusDropBtn = document.querySelector(".cheat-status__drop-btn");
+const cheatStatusDropPage = document.querySelector(".cheat-status__drop");
+
+if (cheatStatusDropBtn) {
+  cheatStatusDropBtn.addEventListener("click", () => {
+    cheatStatusDropPage.classList.toggle("active");
+  });
+}
