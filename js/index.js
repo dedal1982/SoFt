@@ -242,14 +242,16 @@ if (catalogCards) {
 
 //выбор дней и появление цены в оплате
 const checkDays = document.querySelectorAll(".pay-button");
-const amountBody = document.querySelector(".form-page-amount span");
+const amountBody = document.querySelectorAll(".form-page-amount span");
 
 if (checkDays) {
   checkDays.forEach((item) => {
     item.addEventListener("click", () => {
       console.log(item, amountBody);
       const dataPrise = item.getAttribute("data-prise");
-      amountBody.textContent = dataPrise + " " + "₽";
+      amountBody.forEach((elem) => {
+        elem.textContent = dataPrise + " " + "₽";
+      });
     });
   });
 }
