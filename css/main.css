@@ -97,12 +97,12 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 28px;
+    gap: 20px;
     margin-top: 51px;
   }
   .menu-mobile-social a {
-    width: 78px;
-    height: 78px;
+    width: 63px;
+    height: 63px;
     border-radius: 15px;
   }
   .menu-mobile-social a img {
@@ -244,14 +244,17 @@ button {
 .promo {
   width: 100%;
   height: 100dvh;
+}
+.promo__bg {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     linear-gradient(180deg, rgba(13, 16, 19, 0) 0%, #0075ff 244.5%),
     url(../images/prom-bg.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  margin-top: 100px;
 }
 @media screen and (max-width: 600px) {
-  .promo {
+  .promo__bg {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
       linear-gradient(180deg, rgba(13, 16, 19, 0) 0%, #0075ff 244.5%),
       url(../images/Frame\ 14.png);
@@ -306,7 +309,7 @@ button {
     width: 350px;
     height: 500px;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
