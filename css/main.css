@@ -859,14 +859,13 @@ input[type="search"]::-webkit-search-results-decoration {
 /*---important---*/
 .important {
   width: 100%;
-  height: 1000px;
   background: url(../images/important-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .important__wrapper {
   padding-top: 92px;
-  padding-bottom: 234px;
+  padding-bottom: 92px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
