@@ -862,22 +862,24 @@ input[type="search"]::-webkit-search-results-decoration {
   background: url(../images/important-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
 }
 .important__wrapper {
-  padding-top: 92px;
-  padding-bottom: 92px;
   box-sizing: border-box;
   display: flex;
+  align-items: center;
+  gap: 50px;
   position: relative;
+  margin-left: auto;
+}
+.important__image {
+  width: 900px;
+  height: auto;
+  margin-left: auto;
 }
 .important__inner {
   display: flex;
   flex-direction: column;
-}
-@media screen and (max-width: 1024px) {
-  .important__wrapper {
-    padding-bottom: 90px;
-  }
 }
 @media screen and (max-width: 600px) {
   .important__wrapper {
@@ -885,12 +887,9 @@ input[type="search"]::-webkit-search-results-decoration {
     padding-bottom: 60px;
   }
 }
-.important__wrapper h2 {
-  font-size: 105px;
-  z-index: 2;
-}
+
 .important__description {
-  max-width: 700px;
+  max-width: 750px;
   width: 100%;
   display: flex;
   flex-direction: column;
