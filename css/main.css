@@ -530,6 +530,9 @@ button {
     linear-gradient(180deg, rgba(13, 16, 19, 0) 0%, #0075ff 244.5%);
 }
 .catalog__bg {
+  background: url(../images/important-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .catalog__wrapper {
   padding-top: 100px;
