@@ -84,19 +84,39 @@ if (formCheckDays) {
 }
 
 //делаем кнопку купить кликабельной,если согласен
-const formBtnActive = document.querySelector(".form-page__btn-wrapp");
-const formBtnPay = document.querySelector(".form-page__btn");
-const cheatAgreementCheck = document.querySelector(
-  ".cheat-enemy__agreement span"
+function toggleElements(
+  agreementCheckboxSelector,
+  buttonContainerSelector,
+  buttonSelector
+) {
+  const agreementCheckbox = document.querySelector(agreementCheckboxSelector);
+  const buttonContainer = document.querySelector(buttonContainerSelector);
+  const button = document.querySelector(buttonSelector);
+
+  if (agreementCheckbox) {
+    agreementCheckbox.addEventListener("click", () => {
+      agreementCheckbox.classList.toggle("active");
+      if (buttonContainer) buttonContainer.classList.toggle("active");
+      if (button) button.classList.toggle("active");
+    });
+  } else {
+    console.warn(
+      `Элемент с селектором "${agreementCheckboxSelector}" не найден.`
+    );
+  }
+}
+
+toggleElements(
+  ".cheat-enemy__agreement span",
+  ".form-page__btn-wrapp",
+  ".form-page__btn"
 );
 
-if (cheatAgreementCheck) {
-  cheatAgreementCheck.addEventListener("click", () => {
-    cheatAgreementCheck.classList.toggle("active");
-    formBtnActive.classList.toggle("active");
-    formBtnPay.classList.toggle("active");
-  });
-}
+toggleElements(
+  ".pay-mobile__agreement span",
+  ".form-page__btn-wrapp",
+  ".form-page__btn"
+);
 
 //смотреть все карточки игр
 const catalogButton = document.querySelector(".catalog__button");
