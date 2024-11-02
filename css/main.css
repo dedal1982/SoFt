@@ -868,8 +868,11 @@ input[type="search"]::-webkit-search-results-decoration {
   padding-bottom: 92px;
   box-sizing: border-box;
   display: flex;
-  flex-direction: column;
   position: relative;
+}
+.important__inner {
+  display: flex;
+  flex-direction: column;
 }
 @media screen and (max-width: 1024px) {
   .important__wrapper {
