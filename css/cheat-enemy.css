@@ -447,8 +447,12 @@
   margin-left: auto;
   margin-top: 5px;
 }
+.form-page__btn-wrapp,
 .form-page__btn-wrapp {
   cursor: not-allowed;
+}
+.form-page__btn-wrapp.active {
+  cursor: pointer;
 }
 .form-page__btn-wrapp.active {
   cursor: pointer;
