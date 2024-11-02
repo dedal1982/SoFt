@@ -865,21 +865,21 @@ input[type="search"]::-webkit-search-results-decoration {
   display: flex;
 }
 .important__wrapper {
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 164px;
+  box-sizing: border-box;
   box-sizing: border-box;
   display: flex;
-  align-items: center;
-  gap: 50px;
+  flex-direction: column;
   position: relative;
-  margin-left: auto;
 }
 .important__image {
-  width: 900px;
+  width: 800px;
   height: auto;
-  margin-left: auto;
-}
-.important__inner {
-  display: flex;
-  flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: -100px;
 }
 @media screen and (max-width: 600px) {
   .important__wrapper {
